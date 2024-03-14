@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+      }
+      td,
+      th {
+        border: 1px solid #000;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <h1>Tables in HTML</h1>
+  <body>
+    <!-- Basic Table -->
+    <table>
+      <caption>
+        Basic Table
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Roll no.</th>
+      </tr>
+
+      <tr>
+        <td>Tanmay</td>
+        <td>X-A</td>
+        <td>39</td>
+      </tr>
+
+      <tr>
+        <td>Vaibhav</td>
+        <td>X-A</td>
+        <td>40</td>
+      </tr>
+    </table>
+
+    <!-- Colspan -->
+    <table>
+      <caption>
+        Colspan
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>Job</th>
+        <th>Salary</th>
+      </tr>
+
+      <tr>
+        <td>Sam</td>
+        <td>UI/UX Designer</td>
+        <td>90,000</td>
+      </tr>
+
+      <tr>
+        <td>Alan</td>
+        <td>Manager</td>
+        <td>1,15,000</td>
+      </tr>
+      <!-- Without colsapn -->
+      <tr>
+        <td>Max</td>
+        <td>Recruiter</td>
+      </tr>
+      <!-- With colsapn -->
+      <tr>
+        <td>Mark</td>
+        <td colspan="2">Recruiter</td>
+      </tr>
+    </table>
+
+    <!-- Rowspan -->
+    <table>
+      <caption>
+        Rowspan
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>Job</th>
+        <th>Salary</th>
+      </tr>
+
+      <tr>
+        <td>Sam</td>
+        <td>UI/UX Designer</td>
+        <td>90,000</td>
+      </tr>
+
+      <tr>
+        <td>Alan</td>
+        <td>Manager</td>
+        <td>1,15,000</td>
+      </tr>
+      <!-- Without Rowsapn -->
+      <tr>
+        <td>Max</td>
+        <td rowspan="2">Recruiter</td>
+        <td rowspan="2">80,000</td>
+      </tr>
+
+      <tr>
+        <td>Steve</td>
+      </tr>
+    </table>
+  </body>
+</html>
