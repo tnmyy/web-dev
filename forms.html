@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-align: center;
+      }
+
+      form {
+        margin: 50px;
+      }
+
+      input {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Forms in HTML</h1>
+    <form action="post">
+      <div>
+        <label for="username">Enter your username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your name"
+          autofocus
+        /><!-- on loading window, without selecting the username input, you can directly type username to it -->
+      </div>
+
+      <div>
+        <!-- name="gender" is same. Hence, only one option can be chosen at a time -->
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="subject" id="physics" />
+        <label for="physics">Physics</label>
+        <input type="checkbox" name="subject" id="chemistry" />
+        <label for="chemistry">Chemistry</label>
+        <input type="checkbox" name="subject" id="maths" />
+        <label for="maths">Maths</label>
+      </div>
+
+      <div>
+        <label for="comment">Enter your comment here</label><br />
+        <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+      </div>
+
+      <div>
+        <label for="game">Select you preferred game</label>
+        <select name="game" id="game">
+          <option value="cricket">Cricket</option>
+          <option value="football">Football</option>
+          <option value="badminton">Badminton</option>
+          <option value="vollyball">Vollyball</option>
+        </select>
+      </div>
+    </form>
+  </body>
+</html>
