@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio, Video & Media</title>
+  </head>
+  <body>
+    <!-- Adding Video in HTML -->
+
+    <!-- <video src="1.mp4" height="250" controls></video> -->
+    <!-- <video src="1.mp4" height="250" autoplay></video> -->
+    <!-- <video src="1.mp4" height="250" controls muted autoplay loop></video> -->
+    <video src="1.mp4" height="250" controls muted poster="poster.jpg"></video>
+
+    <!-- Adding Audio in HTML -->
+
+    <!-- <audio src="./audio.mp3" controls></audio> -->
+    <!-- <audio src="./audio.mp3" controls autoplay></audio> -->
+    <audio src="./audio.mp3" controls loop muted preload="auto"></audio>
+    <!-- The audio will be automatically downloaded by the browser -->
+
+    <!-- Iframes -->
+    <iframe
+      src="https://en.wikipedia.org/wiki/UTF-8"
+      width="500px"
+      height="500px"
+    ></iframe>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/XZwBNDGuWGU?si=3Max8L2GUNnJNFBS"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <!-- It is used to embed other websites -->
+  </body>
+</html>
